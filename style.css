@@ -1,0 +1,33 @@
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f8f5ef;
+    color:#333;
+}
+
+header{
+    background:#7B1E3A;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+h1{
+    font-size:52px;
+}
+
+a{
+    background:#D4AF37;
+    color:white;
+    text-decoration:none;
+    padding:14px 30px;
+    display:inline-block;
+    margin-top:20px;
+    border-radius:8px;
+}
+
+section{
+    max-width:900px;
+    margin:auto;
+    padding:60px 20px;
+}
