@@ -344,13 +344,18 @@ p {
   font-size: 1.55rem;
   text-align: center;
 }
-
-.story-placeholder {
-  min-height: 620px;
-  border: 12px solid var(--cream);
-  box-shadow: var(--shadow);
+  .story-photo {
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.15);
 }
 
+.story-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
 .dining-section {
   width: 100%;
   max-width: none;
