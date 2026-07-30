@@ -728,3 +728,9 @@ h1 {
     background: #0A473B;
     transform: translateY(-3px);
 }
+.room-card img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    display: block;
+}
