@@ -355,6 +355,25 @@ p {
     height: 100%;
     display: block;
     object-fit: cover;
+}.story-caption {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.story-caption strong {
+    display: block;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.35rem;
+    color: var(--forest);
+    margin-bottom: 6px;
+}
+
+.story-caption span {
+    display: block;
+    font-size: 0.95rem;
+    color: #666;
+    font-style: italic;
+    line-height: 1.5;
 }
 .dining-section {
   width: 100%;
