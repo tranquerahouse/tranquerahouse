@@ -202,10 +202,13 @@ p {
   min-height: 100svh;
   align-items: center;
   overflow: hidden;
-  padding: 150px 7% 90px;
+  padding: 180px 7% 90px;
   color: var(--white);
   background:
-    linear-gradient(rgba(9, 27, 22, 0.42), rgba(9, 27, 22, 0.62)),
+    linear-gradient(
+        rgba(9, 27, 22, 0.28),
+        rgba(9, 27, 22, 0.45)
+    ),
     url("images/hero.jpg") center / cover no-repeat;
 }
 
@@ -548,5 +551,131 @@ p {
     right: 14px;
     bottom: 14px;
     min-width: auto;
+  }
+}/* ===== HERO REFINEMENT ===== */
+
+.site-header {
+  min-height: 96px;
+  align-items: flex-start;
+  padding: 24px 4.5%;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+  padding-top: 2px;
+}
+
+.brand::after {
+  content: "MESILAU · KUNDASANG · SABAH";
+  margin-top: 7px;
+  color: var(--gold);
+  font-family: "Inter", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+}
+
+.desktop-nav {
+  align-self: center;
+  gap: 34px;
+  padding-top: 2px;
+}
+
+.header-book-button {
+  align-self: center;
+  min-height: 58px;
+  padding: 16px 32px;
+  border-radius: 2px;
+}
+
+.hero {
+  padding-left: 6.8%;
+  background:
+    linear-gradient(
+      rgba(9, 27, 22, 0.32),
+      rgba(9, 27, 22, 0.48)
+    ),
+    url("images/hero.jpg") center / cover no-repeat;
+}
+
+.hero-overlay {
+  background:
+    radial-gradient(
+      circle at 72% 22%,
+      rgba(255, 220, 150, 0.09),
+      transparent 42%
+    ),
+    linear-gradient(
+      to right,
+      rgba(8, 30, 24, 0.66),
+      rgba(8, 30, 24, 0.08)
+    );
+}
+
+h1 {
+  max-width: 760px;
+  font-size: clamp(3.6rem, 6.4vw, 6.4rem);
+}
+
+.hero-description {
+  max-width: 720px;
+  font-size: clamp(1rem, 1.5vw, 1.18rem);
+}
+
+.hero-actions a {
+  min-height: 58px;
+}
+
+.scroll-indicator::after {
+  animation: scrollLine 1.8s ease-in-out infinite;
+}
+
+@keyframes scrollLine {
+  0% {
+    transform: scaleY(0.25);
+    transform-origin: top;
+    opacity: 0.35;
+  }
+
+  50% {
+    transform: scaleY(1);
+    transform-origin: top;
+    opacity: 1;
+  }
+
+  100% {
+    transform: scaleY(0.25);
+    transform-origin: bottom;
+    opacity: 0.35;
+  }
+}
+
+@media (max-width: 900px) {
+  .site-header {
+    min-height: 76px;
+    align-items: center;
+    padding: 13px 5%;
+  }
+
+  .brand {
+    padding-top: 0;
+  }
+
+  .brand::after {
+    margin-top: 5px;
+    font-size: 0.52rem;
+    letter-spacing: 0.19em;
+  }
+
+  .header-book-button {
+    min-height: 44px;
+    padding: 10px 16px;
+  }
+
+  .hero {
+    padding-left: 6%;
   }
 }
