@@ -703,3 +703,28 @@ h1 {
     padding-left: 6%;
   }
 }
+/* Heritage Menu Button */
+
+.menu-button-wrap {
+    text-align: center;
+    margin: 50px 0 20px;
+}
+
+.menu-button {
+    display: inline-block;
+    padding: 18px 42px;
+    background: #0F5B4C;
+    color: #F5E6B8;
+    text-decoration: none;
+    border: 2px solid #C9A44C;
+    border-radius: 999px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    box-shadow: 0 10px 30px rgba(15, 91, 76, 0.25);
+    transition: 0.3s ease;
+}
+
+.menu-button:hover {
+    background: #0A473B;
+    transform: translateY(-3px);
+}
