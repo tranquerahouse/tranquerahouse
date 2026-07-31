@@ -1078,7 +1078,6 @@ h1 {
     margin-top: 12px;
     margin-bottom: 15px;
 }
-}
 
 .book-btn{
     display:inline-block;
@@ -1258,4 +1257,25 @@ h1 {
 
 .book-btn:hover{
     background:#C9A44C;
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    min-width: 120px;
+}
+
+.footer-links a {
+    display: block;
+    white-space: nowrap;
+}
+.footer-contact a {
+    color: rgba(255,255,255,.85);
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.footer-contact a:hover {
+    color: #C9A44C;
 }
