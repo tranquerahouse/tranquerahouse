@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Baba Nyonya Restaurant in Kundasang | Tranquera House
+  </title>
+
+  <meta
+    name="description"
+    content="Enjoy authentic Baba Nyonya dining at Tranquera House in Mesilau, Kundasang. Freshly prepared heritage dishes available by advance reservation near Mount Kinabalu."
+  >
+
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large"
+  >
+
+  <link
+    rel="canonical"
+    href="https://tranquerahouse.com/dining.html"
+  >
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="images/favicon.png"
+  >
+
+  <link
+    rel="apple-touch-icon"
+    href="images/favicon.png"
+  >
+
+  <link
+    rel="stylesheet"
+    href="style.css?v=3"
+  >
+
+  <!-- Facebook and WhatsApp preview -->
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:title"
+    content="Authentic Baba Nyonya Dining in Kundasang"
+  >
+
+  <meta
+    property="og:description"
+    content="Discover home-cooked Baba Nyonya heritage cuisine, freshly prepared by advance reservation in Mesilau, Kundasang."
+  >
+
+  <meta
+    property="og:url"
+    content="https://tranquerahouse.com/dining.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://tranquerahouse.com/images/laksa.jpg"
+  >
+
+  <meta
+    property="og:image:alt"
+    content="Authentic Baba Nyonya food at Tranquera House in Kundasang"
+  >
+
+  <!-- Restaurant information for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Tranquera House Baba Nyonya Heritage Dining",
+    "url": "https://tranquerahouse.com/dining.html",
+    "image": [
+      "https://tranquerahouse.com/images/laksa.jpg",
+      "https://tranquerahouse.com/images/pineapple-prawn.jpg",
+      "https://tranquerahouse.com/images/pongteh.jpg",
+      "https://tranquerahouse.com/images/keluak.jpg"
+    ],
+    "description": "Authentic home-cooked Baba Nyonya heritage cuisine served by advance reservation in Mesilau, Kundasang.",
+    "servesCuisine": [
+      "Baba Nyonya",
+      "Peranakan",
+      "Malaysian"
+    ],
+    "telephone": "+60177270183",
+    "acceptsReservations": true,
+    "priceRange": "RM",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Mesilau, Kundasang",
+      "addressRegion": "Sabah",
+      "addressCountry": "MY"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Kundasang, Sabah"
+    }
+  }
+  </script>
+
+  <!-- Styling only for this dining page -->
+  <style>
+    .dining-page {
+      background: #f7f3ea;
+      color: #183d32;
+    }
+
+    .dining-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 18px 7%;
+      background: rgba(8, 56, 43, 0.97);
+      color: white;
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(214, 179, 106, 0.24);
+      box-shadow: 0 10px 30px rgba(4, 29, 23, 0.16);
+    }
+
+    .dining-brand {
+      color: white;
+      font-size: 1.25rem;
+      font-weight: 700;
+      text-decoration: none;
+      letter-spacing: 0.04em;
+    }
+
+    .dining-nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .dining-nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .dining-nav a:hover {
+      color: #d6b36a;
+    }
+
+    .dining-book-button,
+    .dining-primary-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 22px;
+      border-radius: 999px;
+      background: #d6b36a;
+      color: #173f33;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 12px 30px rgba(4, 29, 23, 0.22);
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .dining-book-button:hover,
+    .dining-primary-button:hover {
+      transform: translateY(-2px);
+      background: #edca82;
+    }
+
+    .dining-hero {
+      min-height: 86vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      isolation: isolate;
+      padding: 110px 7%;
+      color: white;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(3, 27, 21, 0.92) 0%,
+          rgba(5, 38, 29, 0.76) 48%,
+          rgba(5, 31, 24, 0.38) 100%
+        ),
+        linear-gradient(
+          0deg,
+          rgba(3, 27, 21, 0.62) 0%,
+          rgba(3, 27, 21, 0.08) 58%
+        ),
+        url("images/laksa.jpg") 58% center / cover no-repeat;
+    }
+
+    .dining-hero-content {
+      max-width: 760px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .dining-eyebrow {
+      margin-bottom: 14px;
+      color: #f1d28b;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .dining-hero h1 {
+      max-width: 900px;
+      margin: 0 0 22px;
+      color: #ffffff;
+      font-size: clamp(2.7rem, 7vw, 5.7rem);
+      line-height: 0.98;
+      letter-spacing: -0.025em;
+      text-shadow: 0 5px 24px rgba(0, 0, 0, 0.58);
+    }
+
+    .dining-hero p {
+      max-width: 680px;
+      margin-bottom: 30px;
+      color: #fffaf0;
+      font-size: clamp(1.05rem, 2vw, 1.3rem);
+      line-height: 1.7;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .dining-section {
+      padding: 90px 7%;
+    }
+
+    .dining-section-heading {
+      max-width: 780px;
+      margin: 0 auto 55px;
+      text-align: center;
+    }
+
+    .dining-section-heading span {
+      color: #a47425;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .dining-section-heading h2 {
+      margin: 12px 0 18px;
+      color: #0f4d3c;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+    }
+
+    .dining-section-heading p {
+      margin: 0;
+      color: #52665f;
+      font-size: 1.08rem;
+      line-height: 1.8;
+    }
+
+    .dining-story {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .dining-story img {
+      width: 100%;
+      min-height: 520px;
+      border-radius: 24px;
+      object-fit: cover;
+      box-shadow: 0 18px 55px rgba(15, 77, 60, 0.18);
+    }
+
+    .dining-story-copy h2 {
+      margin-top: 0;
+      color: #0f4d3c;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+    }
+
+    .dining-story-copy p {
+      color: #4f625b;
+      font-size: 1.08rem;
+      line-height: 1.85;
+    }
+
+    .preorder-section {
+      background: #0f4d3c;
+      color: white;
+    }
+
+    .preorder-box {
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 55px;
+      border: 1px solid rgba(214, 179, 106, 0.5);
+      border-radius: 28px;
+      text-align: center;
+    }
+
+    .preorder-box span {
+      color: #f1d28b;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .preorder-box h2 {
+      margin: 15px 0 20px;
+      font-size: clamp(2rem, 4vw, 3.3rem);
+    }
+
+    .preorder-box p {
+      max-width: 760px;
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 1.1rem;
+      line-height: 1.85;
+    }
+
+    .dish-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 30px;
+    }
+
+    .dish-card {
+      overflow: hidden;
+      border-radius: 24px;
+      background: white;
+      box-shadow: 0 15px 45px rgba(15, 77, 60, 0.12);
+    }
+
+    .dish-card img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .dish-card-content {
+      padding: 28px;
+    }
+
+    .dish-card-content h3 {
+      margin: 0 0 12px;
+      color: #0f4d3c;
+      font-size: 1.65rem;
+    }
+
+    .dish-card-content p {
+      margin: 0;
+      color: #5d6c67;
+      line-height: 1.75;
+    }
+
+    .dining-notice {
+      margin-top: 38px;
+      padding: 22px;
+      border-left: 4px solid #d6b36a;
+      border-radius: 8px;
+      background: #fffaf0;
+      color: #4d5f58;
+      line-height: 1.7;
+    }
+
+    .experience-section {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      min-height: 590px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      background:
+        linear-gradient(
+          rgba(4, 35, 27, 0.86),
+          rgba(4, 40, 30, 0.91)
+        ),
+        url("images/footer.jpg") center / cover no-repeat;
+    }
+
+    .experience-section h2 {
+      margin: 0 auto 22px;
+      max-width: 800px;
+      color: #ffffff;
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      line-height: 1.06;
+      letter-spacing: -0.02em;
+      text-shadow: 0 4px 22px rgba(0, 0, 0, 0.58);
+    }
+
+    .experience-section p {
+      max-width: 720px;
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.94);
+      font-size: 1.1rem;
+      line-height: 1.8;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.46);
+    }
+
+    .faq-list {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      margin-bottom: 18px;
+      padding: 28px;
+      border-radius: 18px;
+      background: white;
+      box-shadow: 0 10px 30px rgba(15, 77, 60, 0.08);
+    }
+
+    .faq-item h3 {
+      margin: 0 0 10px;
+      color: #0f4d3c;
+      font-size: 1.25rem;
+    }
+
+    .faq-item p {
+      margin: 0;
+      color: #5b6c65;
+      line-height: 1.75;
+    }
+
+    .reservation-section {
+      padding: 100px 7%;
+      color: white;
+      text-align: center;
+      background: #082f25;
+    }
+
+    .reservation-section h2 {
+      margin: 0 0 18px;
+      font-size: clamp(2.2rem, 5vw, 4rem);
+    }
+
+    .reservation-section p {
+      max-width: 720px;
+      margin: 0 auto 32px;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .dining-footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      padding: 35px 7%;
+      background: #061e18;
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    .dining-footer a {
+      color: #f1d28b;
+      text-decoration: none;
+    }
+
+    @media (max-width: 850px) {
+      .dining-nav {
+        display: none;
+      }
+
+      .dining-story,
+      .dish-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .dining-story img {
+        min-height: 380px;
+      }
+
+      .dining-hero {
+        min-height: 78vh;
+        padding-top: 90px;
+        background:
+          linear-gradient(
+            90deg,
+            rgba(3, 27, 21, 0.91),
+            rgba(3, 27, 21, 0.52)
+          ),
+          linear-gradient(
+            0deg,
+            rgba(3, 27, 21, 0.76),
+            rgba(3, 27, 21, 0.08) 60%
+          ),
+          url("images/laksa.jpg") 62% center / cover no-repeat;
+      }
+
+      .preorder-box {
+        padding: 38px 24px;
+      }
+
+      .dining-footer {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body class="dining-page">
+
+  <header class="dining-header">
+    <a
+      class="dining-brand"
+      href="index.html"
+    >
+      Tranquera House
+    </a>
+
+    <nav
+      class="dining-nav"
+      aria-label="Dining navigation"
+    >
+      <a href="index.html">Home</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="#story">Our Story</a>
+      <a href="#dishes">Signature Dishes</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <a
+      class="dining-book-button"
+      href="https://wa.me/60177270183?text=Hi%20Tranquera%20House!%20I%20would%20like%20to%20reserve%20a%20Baba%20Nyonya%20dining%20experience."
+      target="_blank"
+      rel="noopener"
+    >
+      Reserve a Table
+    </a>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="dining-hero">
+      <div class="dining-hero-content">
+        <p class="dining-eyebrow">
+          Baba Nyonya Heritage Dining
+        </p>
+
+        <h1>
+          Authentic Baba Nyonya Dining in Kundasang
+        </h1>
+
+        <p>
+          Discover home-cooked Peranakan flavours brought from
+          Melaka to the cool highlands of Mesilau, near Mount
+          Kinabalu. Every meal is prepared with care after your
+          reservation is confirmed.
+        </p>
+
+        <a
+          class="dining-primary-button"
+          href="https://wa.me/60177270183?text=Hi%20Tranquera%20House!%20I%20would%20like%20to%20reserve%20a%20Baba%20Nyonya%20dining%20experience."
+          target="_blank"
+          rel="noopener"
+        >
+          Reserve Your Dining Experience
+        </a>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section
+      class="dining-section"
+      id="story"
+    >
+      <div class="dining-story">
+        <img
+          src="images/pineapple-prawn.jpg"
+          alt="Lemak Nenas Udang Baba Nyonya dish at Tranquera House Kundasang"
+          loading="lazy"
+        >
+
+        <div class="dining-story-copy">
+          <p class="dining-eyebrow">
+            From Melaka to Mesilau
+          </p>
+
+          <h2>
+            A Family Heritage Served in the Highlands
+          </h2>
+
+          <p>
+            Tranquera House was founded by a Baba Nyonya family
+            with roots in Melaka and a home in Sabah. Our food
+            carries the flavours, memories and family recipes
+            passed from one generation to the next.
+          </p>
+
+          <p>
+            Here in Mesilau, Kundasang, we share those flavours
+            through warm hospitality and carefully prepared
+            heritage dishes. Dining with us is not simply about
+            eating—it is about experiencing our family story.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pre-order philosophy -->
+    <section class="dining-section preorder-section">
+      <div class="preorder-box">
+        <span>Freshly Prepared by Reservation</span>
+
+        <h2>
+          Why Advance Pre-Order Is Required
+        </h2>
+
+        <p>
+          We begin preparing your meal only after your order is
+          confirmed—not when you arrive and not from food cooked
+          earlier in the day. Advance reservation gives us time
+          to source ingredients, prepare our rempah and cook each
+          dish with the care authentic Baba Nyonya cuisine
+          deserves.
+        </p>
+      </div>
+    </section>
+
+    <!-- Signature dishes -->
+    <section
+      class="dining-section"
+      id="dishes"
+    >
+      <div class="dining-section-heading">
+        <span>Our Signature Flavours</span>
+
+        <h2>
+          Heritage Dishes Worth Travelling For
+        </h2>
+
+        <p>
+          Our menu celebrates the sweet, savoury, spicy and
+          aromatic flavours that make Baba Nyonya cuisine so
+          distinctive.
+        </p>
+      </div>
+
+      <div class="dish-grid">
+
+        <article class="dish-card">
+          <img
+            src="images/laksa.jpg"
+            alt="Authentic Nyonya Laksa at Tranquera House in Kundasang"
+            loading="lazy"
+          >
+
+          <div class="dish-card-content">
+            <h3>Nyonya Laksa</h3>
+
+            <p>
+              Our signature bowl with an aromatic, creamy and
+              gently spicy broth, prepared with our family's
+              rempah and served warm in the cool Mesilau air.
+            </p>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <img
+            src="images/pineapple-prawn.jpg"
+            alt="Lemak Nenas Udang pineapple prawn curry at Tranquera House"
+            loading="lazy"
+          >
+
+          <div class="dish-card-content">
+            <h3>Lemak Nenas Udang</h3>
+
+            <p>
+              Fresh prawns and pineapple cooked in a rich,
+              fragrant coconut gravy—sweet, savoury and gently
+              spicy in every spoonful.
+            </p>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <img
+            src="images/pongteh.jpg"
+            alt="Ayam Pongteh traditional Baba Nyonya chicken dish in Kundasang"
+            loading="lazy"
+          >
+
+          <div class="dish-card-content">
+            <h3>Ayam Pongteh</h3>
+
+            <p>
+              A comforting heritage chicken dish slowly cooked
+              with fermented bean paste, potatoes and warm
+              savoury flavours.
+            </p>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <img
+            src="images/keluak.jpg"
+            alt="Nasi Goreng Buah Keluak rare Peranakan dish at Tranquera House"
+            loading="lazy"
+          >
+
+          <div class="dish-card-content">
+            <h3>Nasi Goreng Buah Keluak</h3>
+
+            <p>
+              A rare and distinctive Peranakan favourite with
+              deep, earthy buah keluak flavours—an experience
+              many guests discover for the first time here.
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="dining-notice">
+        <strong>Please note:</strong>
+        Menu availability may vary because dishes are prepared
+        according to ingredient availability and advance orders.
+        Contact us before your visit to confirm the available
+        dishes and reservation time.
+      </div>
+    </section>
+
+    <!-- Dining atmosphere -->
+    <section class="dining-section experience-section">
+      <h2>
+        Heritage Dining Above the Clouds
+      </h2>
+
+      <p>
+        Enjoy the warmth of a family-run dining experience,
+        surrounded by the peaceful atmosphere and cool mountain
+        air of Mesilau, Kundasang. Tranquera House is located
+        near Mount Kinabalu and the popular attractions of the
+        Kundasang highlands.
+      </p>
+    </section>
+
+    <!-- FAQ -->
+    <section
+      class="dining-section"
+      id="faq"
+    >
+      <div class="dining-section-heading">
+        <span>Dining Information</span>
+
+        <h2>
+          Frequently Asked Questions
+        </h2>
+      </div>
+
+      <div class="faq-list">
+
+        <article class="faq-item">
+          <h3>
+            Do I need to make a dining reservation?
+          </h3>
+
+          <p>
+            Yes. Our meals are available by advance reservation
+            because preparation begins only after your order is
+            confirmed.
+          </p>
+        </article>
+
+        <article class="faq-item">
+          <h3>
+            Can walk-in guests order food?
+          </h3>
+
+          <p>
+            Walk-in availability is not guaranteed. Contact us
+            early so we can confirm the dishes and dining time
+            available for your visit.
+          </p>
+        </article>
+
+        <article class="faq-item">
+          <h3>
+            Is the food halal?
+          </h3>
+
+          <p>
+            Our ingredients are halal, and we do not use pork,
+            lard, cooking wine or alcohol in our cooking.
+          </p>
+        </article>
+
+        <article class="faq-item">
+          <h3>
+            Where is Tranquera House located?
+          </h3>
+
+          <p>
+            We are located in Mesilau, Kundasang, Sabah, close
+            to Mount Kinabalu and popular highland attractions.
+          </p>
+        </article>
+
+        <article class="faq-item">
+          <h3>
+            Can non-hotel guests dine at Tranquera House?
+          </h3>
+
+          <p>
+            Yes. Non-staying guests are welcome when dining is
+            reserved and confirmed in advance.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Reservation -->
+    <section class="reservation-section">
+      <h2>
+        Reserve Your Heritage Dining Experience
+      </h2>
+
+      <p>
+        Tell us your preferred date, number of guests and dishes.
+        Our team will confirm availability and help plan your
+        meal before you arrive.
+      </p>
+
+      <a
+        class="dining-primary-button"
+        href="https://wa.me/60177270183?text=Hi%20Tranquera%20House!%20I%20would%20like%20to%20reserve%20a%20Baba%20Nyonya%20dining%20experience.%20My%20preferred%20date%20is%3A%20"
+        target="_blank"
+        rel="noopener"
+      >
+        Reserve Through WhatsApp
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="dining-footer">
+    <div>
+      © 2026 Tranquera House. Mesilau, Kundasang, Sabah.
+    </div>
+
+    <div>
+      <a href="index.html">Home</a>
+      &nbsp; • &nbsp;
+      <a href="rooms.html">Rooms</a>
+      &nbsp; • &nbsp;
+      <a href="https://book.tranquerahouse.com">
+        Book a Stay
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
