@@ -706,8 +706,13 @@ h1 {
 /* Heritage Menu Button */
 
 .menu-button-wrap {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 28px 0 0;
     text-align: center;
-    margin: 50px 0 20px;
 }
 
 .menu-button {
@@ -727,6 +732,18 @@ h1 {
 .menu-button:hover {
     background: #0A473B;
     transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+    .menu-button-wrap {
+        gap: 14px;
+        margin-top: 16px;
+    }
+
+    .menu-button {
+        width: min(100%, 360px);
+        padding: 16px 22px;
+    }
 }
 
 .room-card img {
