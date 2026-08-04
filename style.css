@@ -990,11 +990,23 @@ h1 {
     transform: translateY(-4px);
     box-shadow: 0 16px 36px rgba(0,0,0,.25);
 }
-.footer-logo img {
+.footer-logo {
     width: 130px;
-    height: auto;
+    height: 130px;
+    flex: 0 0 130px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: #102c25;
+}
+
+.footer-logo img {
+    width: 142px;
+    max-width: none;
+    height: 142px;
     display: block;
+    object-fit: cover;
     opacity: 0.95;
+    transform: translate(-6px, -6px);
 }
 .chat-menu {
     position: absolute;
