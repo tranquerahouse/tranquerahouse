@@ -991,12 +991,22 @@ h1 {
     box-shadow: 0 16px 36px rgba(0,0,0,.25);
 }
 .footer-logo {
+    position: relative;
     width: 130px;
     height: 130px;
     flex: 0 0 130px;
     overflow: hidden;
     border-radius: 50%;
     background: #102c25;
+}
+
+.footer-logo::after {
+    position: absolute;
+    inset: 0;
+    border: 3px solid #102c25;
+    border-radius: 50%;
+    content: "";
+    pointer-events: none;
 }
 
 .footer-logo img {
